@@ -1,0 +1,31 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+:root {
+   /*custom variables here*/
+   
+}
+
+.container {
+    width: fit-content; /* Set the width based on content */
+    position: relative;
+}
+
+.tonome_image {
+    display: block;
+    height: 100vh;
+    width:auto; /* Use the custom variable */
+}
+
+.blackTape {
+    position: absolute;
+    background-color: black;
+    opacity: 0.7;
+    height: 15%;
+    width: 100%;
+    left: 0;
+    top: 70%;
+}
