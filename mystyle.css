@@ -14,7 +14,17 @@
    
 }
 
-.container {
+/* both panels*/
+
+.container{
+    display: flex;
+}
+
+
+
+/*---------------------------------left panel starts ---------------------------*/
+
+.leftContainer {
     width: fit-content; /* Set the width based on content */
     position: relative;
 }
@@ -22,6 +32,7 @@
 .tonome_image {
     display: block;
     height: 100vh;
+    border: 1vh solid black;
     width:auto; /* Use the custom variable */
 }
 
@@ -63,4 +74,23 @@
     height: 10vh;
     width: auto;
     padding-right: 1vh;
+}
+/*---------------------------------left panel ends ---------------------------*/
+
+/*-------------------------------right panel starts --------------------------*/
+
+.rightContainer{
+   height: 100vh;
+   background-color: rgb(255, 241, 160);
+}
+
+.rightContainer > div
+{
+    background-color: white;
+    height: 90vh;
+    margin-top: 5vh;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+
 }
