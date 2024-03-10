@@ -2,6 +2,10 @@
     font-family: "toon-font";
     src: url("./fonts/Copyduck.ttf");
 }
+@font-face {
+    font-family: "EazyChat";
+    src: url("./fonts/EazyChat.ttf");
+}
 
 * {
     padding: 0px;
@@ -41,7 +45,7 @@
     display: flex;
     justify-content:space-between;
     align-items: center;
-    font-size: 10vh;
+    font-size: 9vh;
     font-family: "toon-font" , sans-serif;
 
     background-color: black;
@@ -55,13 +59,16 @@
 .blackTape > .L-HandSide{
     text-align: left;
     color:  rgb(255, 166, 0);
-    padding-left: 10vh;
+    padding-left: 5vh;
+    align-self: center;
 }
 
 .blackTape > .R-HandSide{
     text-align: right;
     color:#29bfff;
-    padding-right: 10vh;
+    padding-right: 5vh;
+    padding-bottom: 1vh;
+    align-self: center;
 }
 
 
@@ -71,9 +78,11 @@
 
 
 .blackTape > p > .appleImg{
-    height: 10vh;
+    height: 9vh;
     width: auto;
     padding-right: 1vh;
+    align-self: center;
+
 }
 /*---------------------------------left panel ends ---------------------------*/
 
@@ -81,16 +90,48 @@
 
 .rightContainer{
    height: 100vh;
-   background-color: rgb(255, 241, 160);
+   background-color: rgb(232, 232, 231);
 }
 
 .rightContainer > div
 {
     background-color: white;
-    height: 90vh;
-    margin-top: 5vh;
-    width: 90%;
+    height: 98vh;
+    margin-top: 1vh;
+    width: 96%;
     margin-left: auto;
     margin-right: auto;
+}
+
+.IntroText
+{
+    font-family: "EazyChat",sans-serif;
+    background-color: rgb(255, 230, 1);
+    padding: 5vh 0;
+    font-size: 3rem;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.formSection{
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    justify-content:space-between;
+    flex-wrap: wrap;
+    width: 65%;
+    max-width: 65%;
+    align-items: center;
+
+}
+
+.form-input{
+    align-self: center;
+}
+
+.form-input input{
+    display: flex;
+    width: 250px;
+    height: 30px;
 
 }
